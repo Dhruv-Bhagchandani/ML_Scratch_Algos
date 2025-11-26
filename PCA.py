@@ -1,4 +1,4 @@
-# The foolowing code is an implementation of Principal Component Analysis (PCA) from scratch for a three dimensional dataset.
+# The following code is an implementation of Principal Component Analysis (PCA) from scratch for a three dimensional dataset.
 # Our aim is to reduce the dimensionality of the dataset from 3D to 2D while retaining most of the variance in the data.
 # Dataset description : The dataset consists of three features (X1, X2, X3) and a target variable (target). 
 # It is not importanat what exactly the features represent. here we are focusing on the working of PCA.
@@ -29,5 +29,6 @@ def pca(df):
     # Generating the final dataframe with the target variable :
     new_df = pd.DataFrame(transformed_df,columns=['PC1','PC2'])
     new_df['target'] = df.iloc['target'].values
+
 
     return new_df
